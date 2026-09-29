@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Merce Nails | Uñas · Belleza · Estilo</title>
+  <meta name="description" content="Manicura, diseño y cuidado de uñas en Corrientes Capital. Soft Gel, Soft Acrílico, Capping, Semipermanente, Dipping y Nail Art. Reservá tu turno online.">
+  <meta name="theme-color" content="#fdeaf0">
+  <meta property="og:title" content="Merce Nails · Reservá tu turno">
+  <meta property="og:description" content="Uñas que hablan de vos. Elegí servicio, día y horario en un minuto.">
+  <meta property="og:image" content="img/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="has-bottom-nav">
+
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <span class="logo-name">Merce Nails <svg class="heart-sm"><use href="icons.svg#i-heart"/></svg></span>
+      <span class="logo-tag">UÑAS · BELLEZA · ESTILO</span>
+    </a>
+    <nav class="top-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="reservar.html" class="btn btn-sm">
+      <svg class="ico"><use href="icons.svg#i-calendar"/></svg>
+      <span>Reservar turno</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- ===== Inicio ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="eyebrow">TU MOMENTO DE BELLEZA</p>
+        <h1>
+          Uñas que
+          <span class="script">hablan de vos <svg class="heart-outline"><use href="icons.svg#i-heart"/></svg></span>
+        </h1>
+        <p class="hero-sub">Manicura, diseño y cuidado de uñas con un estilo único y personalizado.</p>
+        <a href="reservar.html" class="btn btn-lg">
+          <svg class="ico"><use href="icons.svg#i-calendar"/></svg>
+          Reservar turno
+          <svg class="ico"><use href="icons.svg#i-arrow"/></svg>
+        </a>
+      </div>
+
+      <ul class="features">
+        <li><span class="feat-ico"><svg><use href="icons.svg#i-diamond"/></svg></span><span>Resultados<br>de calidad</span></li>
+        <li><span class="feat-ico"><svg><use href="icons.svg#i-heart"/></svg></span><span>Diseños<br>personalizados</span></li>
+        <li><span class="feat-ico"><svg><use href="icons.svg#i-leaf"/></svg></span><span>Higiene<br>y cuidado</span></li>
+      </ul>
+
+      <div class="hero-img">
+        <span class="hero-band"></span>
+        <img src="img/hero.jpg" alt="Uñas esculpidas color nude con detalles de perlas y dorado. Tu estilo en cada detalle">
+        <svg class="hero-curve" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="curve-band" d="M0 55 C12 78 26 92 40 100 L0 100 Z"/>
+          <path class="curve-fill" d="M0 62 C11 82 22 94 33 100 L0 100 Z"/>
+        </svg>
+      </div>
+
+      <span class="sparkle s1">✦</span>
+      <span class="sparkle s2">✦</span>
+      <span class="sparkle s3">✦</span>
+      <span class="sparkle s4">✦</span>
+
+      <!-- Borde ondulado de la foto (coordenadas relativas, se adapta a cualquier tamaño) -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <clipPath id="hero-wave" clipPathUnits="objectBoundingBox">
+          <path d="M0.2 0 C0.06 0.14 0.2 0.3 0.1 0.46 C0.02 0.6 0.04 0.78 0.12 1 L1 1 L1 0 Z"/>
+        </clipPath>
+        <clipPath id="hero-wave-band" clipPathUnits="objectBoundingBox">
+          <path d="M0.13 0 C-0.01 0.14 0.13 0.3 0.03 0.46 C-0.05 0.6 -0.03 0.78 0.05 1 L1 1 L1 0 Z"/>
+        </clipPath>
+      </svg>
+    </section>
+
+    <!-- ===== Mis trabajos (carrusel) ===== -->
+    <section class="section" id="trabajos">
+      <div class="section-head">
+        <h2>Mis trabajos <svg class="heart-sm"><use href="icons.svg#i-heart"/></svg></h2>
+        <a href="#" class="see-more" id="instagram-link" hidden target="_blank" rel="noopener">Instagram <svg><use href="icons.svg#i-arrow"/></svg></a>
+      </div>
+      <div class="carousel">
+        <div class="carousel-track" id="carousel" aria-label="Fotos de trabajos"></div>
+        <button class="car-btn car-prev" aria-label="Anterior"><svg><use href="icons.svg#i-chev-left"/></svg></button>
+        <button class="car-btn car-next" aria-label="Siguiente"><svg><use href="icons.svg#i-chev-right"/></svg></button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- ===== Servicios y precios ===== -->
+    <section class="section" id="servicios">
+      <div class="section-head">
+        <h2>Servicios y precios <svg class="heart-sm"><use href="icons.svg#i-heart"/></svg></h2>
+      </div>
+      <div class="services" id="services">
+        <p class="muted-note">Cargando servicios…</p>
+      </div>
+      <p class="fine-print">Los precios pueden variar según el largo y el diseño. Consultame por WhatsApp.</p>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section class="section contact" id="contacto">
+      <a class="contact-card" id="maps-link" href="#" target="_blank" rel="noopener">
+        <svg class="card-heart"><use href="icons.svg#i-heart"/></svg>
+        <span class="contact-ico"><svg><use href="icons.svg#i-pin"/></svg></span>
+        <h3>Ubicación</h3>
+        <p><span id="address">Valparahizo 2878, Corrientes</span></p>
+      </a>
+      <a class="contact-card wa-link" href="#" target="_blank" rel="noopener">
+        <svg class="card-heart"><use href="icons.svg#i-heart"/></svg>
+        <span class="contact-ico"><svg><use href="icons.svg#i-whatsapp"/></svg></span>
+        <h3>WhatsApp</h3>
+        <p>Consultas y reservas directamente.</p>
+      </a>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="cta">
+        <span class="sparkle c1">✦</span>
+        <span class="sparkle c2">✦</span>
+        <h2>¿Querés tu turno? <svg class="heart-outline"><use href="icons.svg#i-heart"/></svg></h2>
+        <p>Elegí el servicio y horario que te quede cómodo.</p>
+        <a href="reservar.html" class="btn btn-lg btn-block">
+          Reservar mi turno
+          <svg class="ico"><use href="icons.svg#i-arrow"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Desarrollado y diseñado por anttobocc</p>
+  </footer>
+
+  <!-- Barra inferior (mobile) -->
+  <nav class="bottom-nav" aria-label="Navegación">
+    <a href="#inicio" class="active"><svg><use href="icons.svg#i-home"/></svg>Inicio</a>
+    <a href="#servicios"><svg><use href="icons.svg#i-grid"/></svg>Servicios</a>
+    <a href="#trabajos"><svg><use href="icons.svg#i-image"/></svg>Trabajos</a>
+    <a href="reservar.html" class="bn-main"><span><svg><use href="icons.svg#i-calendar"/></svg></span>Turnos</a>
+    <a href="#" class="wa-link" target="_blank" rel="noopener"><svg><use href="icons.svg#i-whatsapp"/></svg>WhatsApp</a>
+  </nav>
+
+  <!-- Visor de fotos -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" aria-label="Cerrar"><svg><use href="icons.svg#i-x"/></svg></button>
+    <button class="lb-prev" aria-label="Anterior"><svg><use href="icons.svg#i-chev-left"/></svg></button>
+    <img alt="">
+    <button class="lb-next" aria-label="Siguiente"><svg><use href="icons.svg#i-chev-right"/></svg></button>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

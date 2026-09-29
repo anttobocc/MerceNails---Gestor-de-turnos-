@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Reservar turno | Merce Nails</title>
+  <meta name="description" content="Reservá tu turno en Merce Nails: elegí servicio, día y horario.">
+  <meta name="theme-color" content="#fdeaf0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="has-bottom-nav">
+
+  <header class="header">
+    <a href="./" class="logo">
+      <span class="logo-name">Merce Nails <svg class="heart-sm"><use href="icons.svg#i-heart"/></svg></span>
+      <span class="logo-tag">UÑAS · BELLEZA · ESTILO</span>
+    </a>
+    <nav class="top-nav">
+      <a href="./#inicio">Inicio</a>
+      <a href="./#servicios">Servicios</a>
+      <a href="./#trabajos">Trabajos</a>
+      <a href="./#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="booking">
+    <div class="booking-top">
+      <button class="icon-btn" id="back" aria-label="Volver"><svg><use href="icons.svg#i-back"/></svg></button>
+      <div>
+        <h1>Reservar turno</h1>
+        <p id="step-label">Paso 1 de 5</p>
+      </div>
+    </div>
+    <div class="progress" id="progress"><span></span><span></span><span></span><span></span><span></span></div>
+
+    <div id="error" class="error-msg" hidden></div>
+    <section id="step" class="step"></section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegación">
+    <a href="./#inicio"><svg><use href="icons.svg#i-home"/></svg>Inicio</a>
+    <a href="./#servicios"><svg><use href="icons.svg#i-grid"/></svg>Servicios</a>
+    <a href="./#trabajos"><svg><use href="icons.svg#i-image"/></svg>Trabajos</a>
+    <a href="reservar.html" class="bn-main"><span><svg><use href="icons.svg#i-calendar"/></svg></span>Turnos</a>
+    <a href="#" class="wa-link" target="_blank" rel="noopener"><svg><use href="icons.svg#i-whatsapp"/></svg>WhatsApp</a>
+  </nav>
+
+  <script src="common.js"></script>
+  <script src="reservar.js"></script>
+</body>
+</html>

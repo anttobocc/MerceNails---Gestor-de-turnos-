@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#faf4f6">
+  <title>Panel · Merce Nails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <section id="login" class="login" hidden>
+    <form class="login-card" id="login-form">
+      <span class="logo-name">Merce Nails <svg class="heart-sm"><use href="../icons.svg#i-heart"/></svg></span>
+      <p class="login-sub">Panel de turnos</p>
+      <label class="field"><span>Usuario</span><input name="user" autocomplete="username" required></label>
+      <label class="field"><span>Contraseña</span><input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="form-error" id="login-error" hidden></p>
+      <button class="btn btn-block" type="submit">Ingresar</button>
+    </form>
+  </section>
+
+  <!-- App -->
+  <div id="app" class="app" hidden>
+    <aside class="drawer" id="drawer">
+      <div class="drawer-head">
+        <span class="logo-name">Merce Nails <svg class="heart-sm"><use href="../icons.svg#i-heart"/></svg></span>
+        <button class="icon-btn drawer-close" data-close-drawer aria-label="Cerrar menú"><svg><use href="../icons.svg#i-x"/></svg></button>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="#/"><svg><use href="../icons.svg#i-dashboard"/></svg>Dashboard</a>
+        <a href="#/hoy"><svg><use href="../icons.svg#i-clock"/></svg>Turnos de hoy</a>
+        <a href="#/proximos"><svg><use href="../icons.svg#i-list"/></svg>Próximos turnos</a>
+        <a href="#/pendientes"><svg><use href="../icons.svg#i-hourglass"/></svg>Turnos pendientes <b class="badge" id="pending-badge" hidden></b></a>
+        <a href="#/calendario"><svg><use href="../icons.svg#i-calendar"/></svg>Calendario</a>
+        <a href="#/servicios"><svg><use href="../icons.svg#i-grid"/></svg>Servicios</a>
+        <a href="#/horarios"><svg><use href="../icons.svg#i-clock"/></svg>Horarios disponibles</a>
+        <a href="#/config"><svg><use href="../icons.svg#i-settings"/></svg>Configuración</a>
+        <a href="#/whatsapp"><svg><use href="../icons.svg#i-whatsapp"/></svg>WhatsApp</a>
+      </nav>
+      <div class="drawer-foot">
+        <a href="../" target="_blank"><svg><use href="../icons.svg#i-home"/></svg>Ver la web</a>
+        <button id="logout"><svg><use href="../icons.svg#i-logout"/></svg>Cerrar sesión</button>
+      </div>
+    </aside>
+    <div class="backdrop" data-close-drawer></div>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="title"></h1>
+          <p id="subtitle"></p>
+        </div>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú"><svg><use href="../icons.svg#i-menu"/></svg></button>
+      </header>
+      <div id="view"></div>
+    </main>
+
+    <button class="fab" id="fab" aria-label="Nuevo turno"><svg><use href="../icons.svg#i-plus"/></svg></button>
+  </div>
+
+  <!-- Hoja modal -->
+  <div class="sheet-wrap" id="sheet" hidden>
+    <div class="sheet" role="dialog" aria-modal="true">
+      <div class="sheet-handle"></div>
+      <button class="icon-btn sheet-close" aria-label="Cerrar"><svg><use href="../icons.svg#i-x"/></svg></button>
+      <div id="sheet-body"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
